@@ -1,0 +1,89 @@
+.chemicals-content-component{
+   
+    .challenges{
+        flex-wrap: wrap;
+        margin-bottom:50px;
+        padding:5vh 5vw;
+        display:flex;
+        height:fit-content;
+        justify-content: space-between; 
+        @media only screen and (max-width: 1024px) {
+           flex-direction: column-reverse;
+         }   
+        .chemical-images{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;    
+            img{
+                object-fit: cover;
+                border-radius: 5px;
+                width:24%;   
+            }
+        }
+        .challenges-content{
+            line-height: 1.8;
+            padding:0 4vw 10px;
+            padding-top:60px;
+            width:58%;
+            max-width:100%;
+            margin:0;
+            background-color:rgba(243, 242, 242, 0.857);
+            font-size:13px;
+            height:100%;
+            min-height:fit-content;
+            border-radius: 4px;
+            @media only screen and (max-width: 1024px) {
+               width:100%;
+            }
+          
+            .bullet{
+                display: flex;
+                font-weight: 600;
+                margin:20px 0;
+                padding-bottom:20px;
+                font-size:calc(12px + 0.05vw);
+                align-items: center;
+                border-bottom:1px solid rgb(173, 173, 173);
+                &.last{
+                    border:0 !important;
+                }
+                
+                .icon-container{
+                    margin-right:20px;
+                    background-image: linear-gradient(to right, #d6f5ff , #64ccfce6);
+                    height:fit-content;
+                    padding:12px;
+                    border-radius: 50%;
+                    img{
+                        height:25px;
+                        width:25px;
+                    }
+                }
+            }
+            
+        }
+        
+        .carousel-container{
+            width:40%;
+            max-width: 100%;
+            @media only screen and (max-width: 1024px) {
+                width:100%;
+             }
+            .carousel-control-next, .carousel-control-prev{
+                display:none;
+            }
+            button{
+                height:9px;
+                width:9px;
+                margin:0 10px;
+                border-radius:50%;
+            }
+            img, .carousel-inner, .carousel-item,.carousel{
+                border-radius: 4px;
+                object-fit: cover;
+                height:100%;
+            }
+        }
+    }
+    
+}

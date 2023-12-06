@@ -1,0 +1,102 @@
+.background-heading-component{
+    .background{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 500px) {
+            height:220px;
+            .dots-container{
+                display:none !important;
+            }
+        }
+        .dots-container{
+            background:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:0 auto;
+            left:0;
+            right:0;
+            width: 300px;
+            z-index: 1;
+            height: 240px;
+            position: relative;
+            position: absolute;
+           
+        }
+        .dots-top{
+            z-index: 1;
+            position: absolute;
+            left:-20%;
+            top:-50%;
+        }
+        .dots-bottom{
+            z-index: 1;
+            position: absolute;
+            right:-30%;
+            bottom:15%;
+        }
+        .circle{
+            color:#1171a4;
+        }
+    }
+    .details{
+        z-index: 1000;
+        position: relative;
+        height:355px;
+        max-width:1200px;
+        display: flex;
+        color: #1171a4;
+        font-size: calc(10px + 0.5vw);
+        font-weight: 600;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            max-width:1200px;
+            z-index: 1000;
+            margin-top:30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #1171a4;
+            font-weight: 600;
+            font-size: calc(12px + 0.9vw);
+            line-height: 1.5;
+            z-index: 1000;
+            margin-bottom: 100px;
+            &.sub-heading{
+                
+                font-size: calc(12px + 0.9vw);
+            }
+            @media only screen and (max-width: 500px) {
+                margin-top:40px;
+                margin-bottom:50px;
+            }
+            &:after{
+              content:"";
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: absolute;
+                    left:0;
+                    right:0;
+                    z-index:-1;
+                    background-color: white;
+                    box-shadow: 0 4px 40px hsla(0,0%,63%,.202);
+                    width:300px;
+                    height: 240px;
+                
+            }
+        }
+        .span{
+            max-width:1100px;
+            margin-top:40px;
+            z-index:1000;
+        }
+       
+    }
+}

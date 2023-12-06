@@ -1,0 +1,64 @@
+.strengths-content-component{
+   
+    
+    h3{
+        color: #1171a4;
+        font-weight: 600;
+        line-height: 1.5;
+        @media only screen and (max-width: 800px) {
+            font-size: 12px;
+            
+        }
+    }
+    .description{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+        // display: flex;
+        align-items: center;
+        color: #1171a4;
+        @media only screen and (max-width: 800px) {
+            font-size: 12px;
+            font-weight: 400;
+            
+        }
+    }
+    .specs{
+        width:100%;
+        padding:0 5vw;
+        
+        .spec-content{
+            width:49%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            padding:30px 50px;
+            background: #F4F1F1;
+            @media only screen and (max-width: 800px) {
+                padding:15px;
+            }
+        }
+        .spec-container{
+    
+            margin-bottom:40px;
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+            .spec-image{
+                width:49%;
+                img{
+                    width:100%;
+                    height:100%;
+                    max-height:600px;
+                    object-fit: cover;
+                }
+            }
+            &:nth-child(2n){
+                text-align: right !important;
+                flex-direction: row-reverse !important;
+            }
+        }
+    }
+    
+}

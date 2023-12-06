@@ -1,0 +1,59 @@
+.banner-inner-component{
+    margin:0;
+    padding:0;
+    z-index: 2000;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+   
+    .title{
+        z-index:100;
+        color:#ffffff;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: 'Montserrat';
+        justify-content: center;
+        font-weight: 700;
+        font-size: 20px;
+        position: relative;
+        text-transform: uppercase;
+        width:100%;
+        padding:40px;
+      
+        &::after{
+            text-align: left;
+            content:"";
+            width:100px;
+            height:10px;
+            text-align: left;
+            border-bottom: 3px solid #1171a4;
+
+        }
+    }
+    .banner-image{
+        background:url(../../assets/banner-inner.svg) ;
+        clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+        width:100%;
+        position: relative;
+        height:400px;
+        .play-btn{
+            cursor: pointer;
+            position: absolute;
+            z-index: 1000;
+            top:0;
+            bottom:130px;
+            left:0;
+            right:0;
+            margin:auto;
+            height:190px;
+            width:190px;
+            padding:20px;
+            object-fit: contain;
+        }
+       
+    }
+}
